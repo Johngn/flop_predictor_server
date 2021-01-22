@@ -8,7 +8,6 @@ flask-cors = "*"
 flask = "*"
 numpy = "*"
 gunicorn = "*"
-sklearn = "*"
 
 [dev-packages]
 
