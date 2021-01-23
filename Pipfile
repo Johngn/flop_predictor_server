@@ -9,6 +9,7 @@ flask = "*"
 numpy = "*"
 gunicorn = "*"
 uwsgi = "*"
+sklearn = "*"
 
 [dev-packages]
 
