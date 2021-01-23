@@ -1,6 +1,4 @@
-# import utils
-from main import app as application
+from app import app
 
 if __name__ == "__main__":
-    # utils.load_saved_assets()
-    application.run()
+    app.run()

@@ -13,6 +13,7 @@ def get_utils():
 
 @app.route('/get_options')
 def get_options():
+    print("getting options")
     response = jsonify({
         'directors': utils.get_director_names(),
         'actors': utils.get_actor_names(),
@@ -38,3 +39,6 @@ def predict_boxoffice():
     response.headers.add('Access-Control-Allow-Origin', '*')
     
     return response
+
+if __name__ == "__main__":
+    app.run()
