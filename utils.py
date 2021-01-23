@@ -35,9 +35,7 @@ def get_estimated_boxoffice(duration, avg_vote, budget, actor, director, genre):
     
     return round(__model.predict([x])[0], 2)
 
-def load_saved_assets():
-    print('loading saved assets...start')
-    
+def load_saved_assets():    
     global __data_columns
     global __directors
     global __actors
@@ -52,8 +50,6 @@ def load_saved_assets():
         
     with open("./flop_predictor.pickle", 'rb') as f:
         __model = pickle.load(f)
-    
-    print('loading saved assets...done')
         
     
 def get_director_names():

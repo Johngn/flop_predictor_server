@@ -6,14 +6,8 @@ app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
 @app.route('/')
-def get_utils():
-    utils.load_saved_assets()
-
-    return "loaded"
-
-@app.route('/get_options')
 def get_options():
-    print("getting options")
+    utils.load_saved_assets()
     response = jsonify({
         'directors': utils.get_director_names(),
         'actors': utils.get_actor_names(),
