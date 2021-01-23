@@ -12,6 +12,7 @@ uwsgi = "*"
 scipy = "*"
 joblib = "*"
 threadpoolctl = "*"
+scikit-learn = "*"
 
 [dev-packages]
 
