@@ -10,6 +10,9 @@ numpy = "*"
 gunicorn = "*"
 uwsgi = "*"
 sklearn = "*"
+scipy = "*"
+joblib = "*"
+threadpoolctl = "*"
 
 [dev-packages]
 
